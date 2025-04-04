@@ -3,9 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 
-import { NavigationMenu, NavigationMenuList } from "./ui/navigation-menu";
 import Logo from "./logo";
-import { Button } from "./ui/button";
 
 export function MainNav() {
   return (
