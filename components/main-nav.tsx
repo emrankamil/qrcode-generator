@@ -13,20 +13,6 @@ export function MainNav() {
       <Link href="/" className="lg:mr-6 sm:mr-4 flex items-center gap-2">
         <Logo className="hidden lg:block md:block mt-1 fill-black dark:fill-white" />
       </Link>
-      <NavigationMenu className="hidden lg:block md:block">
-        <NavigationMenuList>
-          <div className="md:flex gap-5">
-            <div className="flex gap-2 pr-5">
-              {/* <ModeToggle /> */}
-              <Link href="/survey">
-                <Button className="" variant="link">
-                  Try
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </NavigationMenuList>
-      </NavigationMenu>
     </div>
   );
 }

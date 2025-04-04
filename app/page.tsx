@@ -1,5 +1,5 @@
 import React from "react";
-import { BentoDemo } from "../components/bento-features";
+import { QRCodeGenerator } from "../components/qr-generator";
 import GridPattern from "../components/ui/animted-grid";
 import Hero from "@/components/Hero";
 
@@ -21,12 +21,7 @@ export default function Home() {
         id="features"
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-10"
       >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h3 className="text-center text-sm font-semibold text-white pb-2">
-            FEATURES
-          </h3>
-        </div>
-        <BentoDemo />
+        <QRCodeGenerator />
       </section>
     </div>
   );

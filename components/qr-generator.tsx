@@ -27,8 +27,8 @@ import { BsPrinter } from "react-icons/bs";
 import { Badge } from "./ui/badge";
 import { track } from "@vercel/analytics";
 
-export function BentoDemo() {
-  const [url, setUrl] = useState("https://drie.cz");
+export function QRCodeGenerator() {
+  const [url, setUrl] = useState("https://github.com/emrankamil");
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
   const [foregroundColor, setForegroundColor] = useState("#000000");
   const [errorCorrection, setErrorCorrection] = useState<"L" | "M" | "Q" | "H">(
@@ -146,12 +146,7 @@ export function BentoDemo() {
   };
 
   return (
-    <div
-      className={
-        // "grid w-full auto-rows-[22rem] grid-cols-2 gap-4 lg:grid-rows-3"
-        "flex flex-col lg:flex-row lg:gap-6"
-      }
-    >
+    <div className={"flex flex-col lg:flex-row lg:gap-6"}>
       <div className="flex gap-6 py-4 lg:py-8 flex-col w-full lg:w-[750px]">
         <div
           className={cn(
@@ -177,7 +172,7 @@ export function BentoDemo() {
                 id="url"
                 value={url}
                 onChange={handleUrlChange}
-                placeholder="https://drie.cz"
+                placeholder="https://github.com/emrankamil"
               />
               <button
                 onClick={handlePasteFromClipboard}
